@@ -1,0 +1,105 @@
+:root {
+  --bleu: #005aac;
+  --fond: #f2f2f2;
+  --text: #2d3e50;
+  --bloc: #fff;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: var(--fond);
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #121212;
+    --text: #f0f0f0;
+    --bloc: #1e1e1e;
+  }
+}
+
+header {
+  background-color: var(--bleu);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  color: var(--text);
+}
+
+.intro {
+  background-color: #e5f0ff;
+  border-left: 5px solid var(--bleu);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+form {
+  background: var(--bloc);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="number"], select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: var(--bleu);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003f7d;
+}
+
+#resultat {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#conseil {
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}

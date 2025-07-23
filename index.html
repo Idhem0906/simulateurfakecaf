@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulateur de déclaration trimestrielle CAF</title>
+  <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Déclaration Trimestrielle - Simulateur CAF</h1>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p><strong>Bienvenue.</strong> Ce simulateur vous aide à estimer vos ressources à déclarer à la CAF pour un trimestre donné. Ce n’est pas une déclaration officielle, mais un outil pédagogique créé par Mehdi.</p>
+    </div>
+
+    <form id="simulateur">
+      <label for="trimestre">🗓️ Trimestre concerné</label>
+      <select id="trimestre">
+        <option>Janvier - Février - Mars</option>
+        <option>Avril - Mai - Juin</option>
+        <option>Juillet - Août - Septembre</option>
+        <option>Octobre - Novembre - Décembre</option>
+      </select>
+
+      <label for="salaires">💼 Salaires nets imposables</label>
+      <input type="number" id="salaires" placeholder="Ex : 1200">
+
+      <label for="poleemploi">🎓 Allocations versées par Pôle Emploi</label>
+      <input type="number" id="poleemploi" placeholder="Ex : 500">
+
+      <label for="indemnites">🩺 Indemnités journalières (maladie, maternité...)</label>
+      <input type="number" id="indemnites" placeholder="Ex : 350">
+
+      <label for="pensions">🏦 Pensions alimentaires perçues</label>
+      <input type="number" id="pensions" placeholder="Ex : 300">
+
+      <label for="autres">⚖️ Autres ressources (locations, placements...)</label>
+      <input type="number" id="autres" placeholder="Ex : 200">
+
+      <div class="buttons">
+        <button type="button" onclick="calculer()">Calculer</button>
+        <button type="button" onclick="resetForm()">Réinitialiser</button>
+        <button type="button" onclick="window.print()">🖨️ Imprimer</button>
+      </div>
+    </form>
+
+    <div id="resultat"></div>
+    <div id="conseil"></div>
+
+    <footer>
+      ⚠️ Ce simulateur est fourni à titre indicatif.<br>
+      © 2025 — Créé par Mehdi
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
